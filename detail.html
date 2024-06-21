@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kendaraan - Ventura City Roleplay</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <style>
+        /* CSS untuk layout detail */
+        .vehicle-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .vehicle-image {
+            flex: 1 1 300px; /* Lebar tetap 300px, bisa disesuaikan */
+            margin-right: 20px;
+        }
+
+        .vehicle-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .vehicle-description {
+            flex: 1 1 calc(100% - 320px); /* Sisa lebar untuk deskripsi */
+        }
+
+        .vehicle-description h2,
+        .vehicle-description p {
+            margin: 0;
+        }
+
+        .discord-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .discord-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Penambahan untuk menampilkan foto tambahan */
+        .additional-photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .additional-photo {
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .additional-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .additional-photo:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ventura City Roleplay</h1>
+    </header>
+    <main>
+        <div class="vehicle-details">
+            <div class="vehicle-image">
+                <img src="" alt="Car Image" id="car-image">
+            </div>
+            <div class="vehicle-description">
+                <h2 id="car-title"></h2>
+                <p id="car-description"></p>
+                <a href="discord://https://discordapp.com/channels/1233369997280280627/1241301747637555220" target="_blank" class="discord-link">Order Here</a>
+                <br>
+                <a href="index.html" target="_blank" class="back-button">Back</a>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ventura City Roleplay</p>
+    </footer>
+    <script src="js/detail.js"></script>
+</body>
+</html>
